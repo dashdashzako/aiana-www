@@ -1,3 +1,16 @@
 baseURL = "https://www.aiana.fr/"
 languageCode = "fr"
 title = "Aiana media player"
+
+enableRobotsTXT = true
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
+
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+
+[params]
+  logo = "/img/aiana.jpg"
+  description = "Aiana media player description"
+
+[permalinks]
+  post = "/:year/:slug/"
