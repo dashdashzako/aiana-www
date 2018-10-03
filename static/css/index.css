@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: system;
+  src: local("system-ui"), local(".SFNSText-Light"), local("Segoe UI"),
+    local("Roboto"), local("Oxygen-Sans"), local("Ubuntu"), local("Cantarell"),
+    local("Helvetica Neue");
+}
+
+html {
+  font-family: "Inria Sans", system, sans-serif;
+}
