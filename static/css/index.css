@@ -84,6 +84,12 @@ a {
 .site-nav {
   padding: 1rem;
 }
+
+.site-nav a {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .site-nav img {
   display: block;
 }
