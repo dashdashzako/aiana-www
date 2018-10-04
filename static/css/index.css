@@ -89,10 +89,12 @@ a {
   text-align: center;
 }
 
-/*  */
+/* site nav */
 
 .site-nav {
-  padding: 0.5rem;
+  padding: 16px 8px;
+  background: var(--palette-black);
+  color: var(--palette-white);
 }
 
 .site-nav a {
@@ -102,16 +104,24 @@ a {
 
 .site-nav img {
   display: block;
+  height: 30px;
+}
+
+@media screen and (min-width: 800px) {
+  .site-nav img {
+    height: auto;
+  }
+}
+
+.site-header {
+  background: #ffffff;
+  padding: 4rem 0;
 }
 
 .site-name {
   margin: 0;
   font-size: 3.5rem;
   font-weight: 300;
-}
-
-.site-header {
-  padding: 4rem 0;
 }
 
 .site-lead {
@@ -130,15 +140,6 @@ a {
 
 .site-footer p {
   margin: 0;
-}
-
-.site-nav {
-  background: var(--palette-black);
-  color: var(--palette-white);
-}
-
-.site-header {
-  background: #ffffff;
 }
 
 .site-header,
