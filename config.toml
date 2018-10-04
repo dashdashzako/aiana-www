@@ -1,7 +1,7 @@
 baseURL = "https://www.aiana.fr/"
 languageCode = "fr"
-title = "Aiana media player"
-
+title = "Aiana, un lecteur vidéo accessible adapté aux MOOC"
+description = "Aiana vise à favoriser l’accès aux systèmes numériques d’enseignement et de formation sans exclure les personnes en situation de handicap notamment d’origine cognitif."
 enableRobotsTXT = true
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS"]
 
