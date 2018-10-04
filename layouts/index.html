@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 
-<h1>Aiana media player</h1>
+<header role="banner">
+  {{ partial "navbar.html" . }}
 
   <div class="site-header">
     <div class="large container">
@@ -14,17 +15,46 @@
   </div>
 </header>
 
-<div class="partners">
-  
-</div>
+<main>
 
-<div class="publications">
-  <h2>Publications</h2>
-  <ol>
-    <li><a href="#">publication 1</a></li>
-    <li><a href="#">publication 2</a></li>
-    <li><a href="#">publication 3</a></li>
-  </ol>
+  <div class="large container presentation">
+    <section>
+      <h2 class="section-title visually-hidden">Présentation du projet</h2>
+      <div>
+        <video src="{{ "vid/presentation-aiana.mp4" | relURL }}" width="100%" controls></video>
+      </div>
+    </section>
+  </div>
+
+  <div class="contributors">
+    <section class="large container">
+      <h2 class="section-title visually-hidden">Contributeurs</h2>
+      <ul class="contributors-list">
+        <li><a href="https://team.inria.fr/potioc/fr/"><img src="{{ "img/logo-equipe-potioc.png" | relURL }}" alt="Équipe Potioc"></a></li>
+        <li><a href="https://www.inria.fr/"><img src="{{ "img/logo-inria.png" | relURL }}" alt="Inria"></a></li>
+        <li><a href="https://www.u-bordeaux.fr/"><img src="{{ "img/logo-universite-de-bordeaux.jpg" | relURL }}" alt="Université de Bordeaux"></a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="container publications">
+    <section>
+      <h2 class="section-title">Présentations et publications</h2>
+      <ul class="publications-list">
+        <li><a href="#">publication 1</a></li>
+        <li><a href="#">publication 2</a></li>
+        <li><a href="#">publication 3</a></li>
+        <li><a href="#">talk 2</a></li>
+        <li><a href="#">talk 2</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<div class="container">
+  <footer class="site-footer">
+    {{ partial "legal.html" .}}
+  </footer>
 </div>
 
 {{ partial "footer.html" . }}

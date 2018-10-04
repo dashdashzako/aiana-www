@@ -1,3 +1,13 @@
+:root {
+  --palette-white: #fafafa;
+  --palette-light-gray: #e5e5e5;
+  --palette-gray: #484848;
+  --palette-black: #111111;
+  --palette-blue: #0074d9;
+  --palette-gray: #aaaaaa;
+  --palette-silver: #dddddd;
+}
+
 *,
 *::before,
 *::after {
@@ -12,5 +22,167 @@
 }
 
 html {
-  font-family: "Inria Sans", system, sans-serif;
+  font-family: "Roboto", system, sans-serif;
+  font-size: 100%;
+  color: var(--palette-black);
+  background-color: var(--palette-white);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+hr {
+  display: block;
+  width: 33%;
+  min-width: 10rem;
+  height: 1px;
+  margin: 2rem auto;
+
+  border: 0;
+  background: var(--palette-gray);
+}
+
+a {
+  color: var(--palette-blue);
+  cursor: pointer;
+}
+
+a:focus {
+  outline: solid 2px var(--palette-blue);
+  outline-offset: 2px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 35rem;
+  font-size: 1.25rem;
+}
+
+.container.large {
+  max-width: 43.75rem;
+}
+
+.container.expanded {
+  max-width: none;
+}
+
+.section-title {
+  margin: 0.5em 0 0.25em 0;
+  text-align: center;
+}
+
+/*  */
+
+.site-nav {
+  padding: 1rem;
+}
+.site-nav img {
+  display: block;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.site-header {
+  padding: 4rem 0;
+}
+
+.site-lead {
+  margin: 1.625rem 0 0;
+  font-size: 1.625rem;
+}
+
+/* footer */
+
+.site-footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: var(--palette-gray);
+  border-top: 1px solid currentColor;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-nav {
+  background: var(--palette-black);
+  color: var(--palette-white);
+}
+
+.site-header {
+  background: #ffffff;
+}
+
+.site-header,
+.site-footer {
+  text-align: center;
+}
+
+/* Presentation */
+
+.publications {
+  padding: 3rem 0;
+}
+
+.presentation section {
+  padding: 3rem 0;
+}
+
+.publications-list {
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+/* Contributors */
+
+.contributors {
+  background-color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.contributors-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.contributors-list li {
+  flex: 0 0 30%;
+  list-style: none;
+}
+
+.contributors-list img,
+.contributors-list a {
+  display: block;
+  max-width: 100%;
+}
+
+/* a11y tools */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: no-wrap;
 }
