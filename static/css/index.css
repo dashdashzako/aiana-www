@@ -169,13 +169,13 @@ a {
 }
 
 .contributors-list li {
-  flex: 0 0 30%;
   list-style: none;
 }
 
 .contributors-list img,
 .contributors-list a {
   display: block;
+  max-height: 100px;
   max-width: 100%;
 }
 
