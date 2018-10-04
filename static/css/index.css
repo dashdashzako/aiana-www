@@ -54,7 +54,7 @@ a {
   cursor: pointer;
 }
 
-a:focus {
+:focus {
   outline: solid 2px var(--palette-blue);
   outline-offset: 2px;
 }
