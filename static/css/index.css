@@ -62,12 +62,12 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 1rem;
-  max-width: 35rem;
+  max-width: 43.75rem;
   font-size: 1.25rem;
 }
 
 .container.large {
-  max-width: 43.75rem;
+  max-width: 50rem;
 }
 
 .container.expanded {
