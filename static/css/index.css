@@ -1,9 +1,8 @@
 :root {
   --palette-white: #fafafa;
   --palette-light-gray: #e5e5e5;
-  --palette-gray: #484848;
   --palette-black: #111111;
-  --palette-blue: #0074d9;
+  --palette-blue: #0070d5;
   --palette-gray: #aaaaaa;
   --palette-silver: #dddddd;
 }
@@ -115,8 +114,7 @@ a {
   margin-top: 2rem;
   padding: 1rem 0;
   font-size: 0.8rem;
-  color: var(--palette-gray);
-  border-top: 1px solid currentColor;
+  border-top: 1px solid var(--palette-gray);
 }
 
 .site-footer p {
