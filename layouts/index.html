@@ -29,10 +29,9 @@
     <section class="large container">
       <h2 class="section-title visually-hidden">Contributeurs</h2>
       <ul class="contributors-list">
-        <li><a href="https://team.inria.fr/potioc/fr/"><img src="{{ "img/logo-equipe-potioc.png" | relURL }}" alt="Équipe Potioc"></a></li>
-        <li><a href="https://www.inria.fr/"><img src="{{ "img/logo-inria.png" | relURL }}" alt="Inria"></a></li>
-        <li><a href="https://www.u-bordeaux.fr/"><img src="{{ "img/logo-universite-de-bordeaux.jpg" | relURL }}" alt="Université de Bordeaux"></a></li>
-        <li><a href="https://cnrs.fr/"><img src="{{ "img/logo-cnrs.svg" | relURL }}" alt="Centre National de la Recherche Scientifique"></a></li>
+        {{ range $.Site.Data.index.sponsors }}
+        <a href="{{ .url }}"><img src="{{ .logo }}" alt="{{ .name }}"></a></li>
+        {{ end }}
       </ul>
     </section>
   </div>
@@ -41,10 +40,9 @@
     <section>
       <h2 class="section-title">Présentations et publications</h2>
       <ul class="publications-list">
-        <li><a href="http://binaire.blog.lemonde.fr/2018/07/10/pourquoi-il-faut-developper-laccessibilite-numerique/">Pourquoi il faut développer l’accessibilité numérique !</a></li>
-        <li><a lang="en" href="https://hal.archives-ouvertes.fr/hal-01954983">Online e-learning and cognitive disabilities: A systematic review</a></li>
-        <li><a lang="en" href="https://hal.inria.fr/hal-01761462">Towards Truly Accessible MOOCs for Persons with Cognitive Disabilities: Design and Field Assessment</a></li>
-        <li><a lang="en" href="https://hal.inria.fr/hal-01848103">Improving the Academic Inclusion of a Student with Special Needs at University Bordeaux</a></li>
+        {{ range $.Site.Data.index.publications }}
+        <li><a href="{{ .url }}" lang="{{ .lang }}">{{ .description }}</a></li>
+        {{ end }}
       </ul>
     </section>
   </div>
